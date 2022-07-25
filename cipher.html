@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        h1{
+          height:20rem;
+        }
+    </style>
+    <script src="cipheralgo.js"></script>
+</head>
+<body class="bg-purple-400">
+    <div class=" ">
+    <h1 class="flex  justify-center items-center custom  text-6xl font-extrabold text-transparent bg-clip-text bg-yellow-300"> Ceasar Cipher  </h1></div>
+    <div class="flex flex-row justify-evenly relative top-14">
+        <div>
+            <h4 class="relative left-14">Encrypt</h4>
+            <div class="relative top-4"><h4>Enter plain text</h4>
+            <input id="plaintext" type="text" class=" border border-black"><br>
+            <h4>Enter key value between 1 - 25</h4>
+            <input id="keyvalue" type="number" class="border border-black"><br><br>
+            <button onclick=encryptceasar() class="relative left-12 bg-yellow-400 text-white font-bold py-2 px-2 rounded-lg">Encrypt!!</button>
+            <h4></h4>
+        </div>
+        </div>
+        <div>
+            
+            <h4 class="relative left-14">Decrypt</h4>
+            <div class="relative top-4">
+            <h4>Enter encrypted text</h4>
+            <input type="text" class="border border-black"><br>
+            <h4>Enter key value between 1 - 25</h4>
+            <input type="text" class="border border-black"><br><br>
+            <button class="relative left-12 bg-yellow-400 text-white font-bold py-2 px-2 rounded-lg">Decrypt!!</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
